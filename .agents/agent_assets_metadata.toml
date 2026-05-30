@@ -1,0 +1,26 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "Z7qKE76n808UVpADkTypJ"
+uri = "file://artifacts/interior-studio/public/hero-1.png"
+type = "image"
+title = "Luxury living room"
+
+[[generated]]
+id = "WNMytFOO1Wg81b5oesDla"
+uri = "file://artifacts/interior-studio/public/hero-2.png"
+type = "image"
+title = "Modern refined kitchen"
+
+[[generated]]
+id = "DDacC4-rN5HLEgtzWqOMz"
+uri = "file://artifacts/interior-studio/public/hero-3.png"
+type = "image"
+title = "Architectural space"
+
+[[generated]]
+id = "ehzLCgx_gYOojwQH6Ayzl"
+uri = "file://artifacts/interior-studio/public/about-studio.png"
+type = "image"
+title = "Design studio workspace"
