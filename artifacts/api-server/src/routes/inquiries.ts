@@ -8,6 +8,7 @@ import {
   UpdateInquiryBody,
   DeleteInquiryParams,
 } from "@workspace/api-zod";
+import { sendInquiryNotification } from "../lib/email";
 
 const router = Router();
 
@@ -27,6 +28,15 @@ router.post("/inquiries", async (req, res) => {
     .values(parsed.data)
     .returning();
   res.status(201).json(inquiry);
+
+  sendInquiryNotification({
+    name: inquiry.name,
+    email: inquiry.email,
+    phone: inquiry.phone,
+    message: inquiry.message,
+    projectType: inquiry.projectType,
+    budget: inquiry.budget,
+  });
 });
 
 router.patch("/inquiries/:id", async (req, res) => {
