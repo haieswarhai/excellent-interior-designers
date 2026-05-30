@@ -35,7 +35,7 @@ export default function AdminDashboard() {
       <div className="min-h-screen flex items-center justify-center bg-stone-100">
         <Card className="w-full max-w-md rounded-none border-border shadow-md">
           <CardHeader className="text-center pb-2">
-            <CardTitle className="font-serif text-2xl tracking-wider">MAISON INTÉRIEURE</CardTitle>
+            <CardTitle className="font-serif text-2xl tracking-wider">eXcellent Interior Designers</CardTitle>
             <p className="text-sm text-muted-foreground uppercase tracking-widest mt-2">Studio Portal</p>
           </CardHeader>
           <CardContent>

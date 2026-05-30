@@ -6,6 +6,11 @@
  * OpenAPI spec version: 0.1.0
  */
 
+export * from './booking';
+export * from './bookingInput';
+export * from './bookingStatus';
+export * from './bookingUpdate';
+export * from './bookingUpdateStatus';
 export * from './customer';
 export * from './customerInput';
 export * from './customerInputStatus';
@@ -19,6 +24,8 @@ export * from './inquiryInput';
 export * from './inquiryStatus';
 export * from './inquiryUpdate';
 export * from './inquiryUpdateStatus';
+export * from './listBookingsParams';
+export * from './listBookingsStatus';
 export * from './listCustomersParams';
 export * from './listCustomersStatus';
 export * from './listProjectsParams';

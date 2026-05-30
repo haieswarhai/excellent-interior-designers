@@ -23,6 +23,7 @@ export default function Navbar() {
     { href: "/about", label: "Studio" },
     { href: "/contact", label: "Contact" },
     { href: "/inquiry", label: "Inquire" },
+    { href: "/book", label: "Book Consultation" },
   ];
 
   return (
@@ -36,7 +37,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link href="/" className="font-serif text-2xl tracking-wider">
-          MAISON INTÉRIEURE
+          eXcellent Interior Designers
         </Link>
         <div className="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest font-medium">
           {navLinks.map((link) => (

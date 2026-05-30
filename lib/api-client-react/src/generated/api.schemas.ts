@@ -5,6 +5,55 @@
  * API specification for Interior Design Studio
  * OpenAPI spec version: 0.1.0
  */
+export type BookingStatus = typeof BookingStatus[keyof typeof BookingStatus];
+
+
+export const BookingStatus = {
+  pending: 'pending',
+  confirmed: 'confirmed',
+  cancelled: 'cancelled',
+} as const;
+
+export interface Booking {
+  id: number;
+  name: string;
+  email: string;
+  /** @nullable */
+  phone?: string | null;
+  /** @nullable */
+  projectType?: string | null;
+  preferredDate: string;
+  preferredTime: string;
+  /** @nullable */
+  notes?: string | null;
+  status: BookingStatus;
+  createdAt: string;
+}
+
+export interface BookingInput {
+  name: string;
+  email: string;
+  phone?: string;
+  projectType?: string;
+  preferredDate: string;
+  preferredTime: string;
+  notes?: string;
+}
+
+export type BookingUpdateStatus = typeof BookingUpdateStatus[keyof typeof BookingUpdateStatus];
+
+
+export const BookingUpdateStatus = {
+  pending: 'pending',
+  confirmed: 'confirmed',
+  cancelled: 'cancelled',
+} as const;
+
+export interface BookingUpdate {
+  status?: BookingUpdateStatus;
+  notes?: string;
+}
+
 export interface HealthStatus {
   status: string;
 }
@@ -244,5 +293,18 @@ export const ListCustomersStatus = {
   warm: 'warm',
   cold: 'cold',
   past: 'past',
+} as const;
+
+export type ListBookingsParams = {
+status?: ListBookingsStatus;
+};
+
+export type ListBookingsStatus = typeof ListBookingsStatus[keyof typeof ListBookingsStatus];
+
+
+export const ListBookingsStatus = {
+  pending: 'pending',
+  confirmed: 'confirmed',
+  cancelled: 'cancelled',
 } as const;
 

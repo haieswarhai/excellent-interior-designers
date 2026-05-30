@@ -295,6 +295,76 @@ export const DeleteInquiryParams = zod.object({
 
 
 /**
+ * @summary List all bookings
+ */
+export const ListBookingsQueryParams = zod.object({
+  "status": zod.enum(['pending', 'confirmed', 'cancelled']).optional()
+})
+
+export const ListBookingsResponseItem = zod.object({
+  "id": zod.number(),
+  "name": zod.string(),
+  "email": zod.string(),
+  "phone": zod.string().nullish(),
+  "projectType": zod.string().nullish(),
+  "preferredDate": zod.string(),
+  "preferredTime": zod.string(),
+  "notes": zod.string().nullish(),
+  "status": zod.enum(['pending', 'confirmed', 'cancelled']),
+  "createdAt": zod.string()
+})
+export const ListBookingsResponse = zod.array(ListBookingsResponseItem)
+
+
+/**
+ * @summary Create a booking
+ */
+export const CreateBookingBody = zod.object({
+  "name": zod.string(),
+  "email": zod.string(),
+  "phone": zod.string().optional(),
+  "projectType": zod.string().optional(),
+  "preferredDate": zod.string(),
+  "preferredTime": zod.string(),
+  "notes": zod.string().optional()
+})
+
+
+/**
+ * @summary Update booking status
+ */
+export const UpdateBookingParams = zod.object({
+  "id": zod.coerce.number()
+})
+
+export const UpdateBookingBody = zod.object({
+  "status": zod.enum(['pending', 'confirmed', 'cancelled']).optional(),
+  "notes": zod.string().optional()
+})
+
+export const UpdateBookingResponse = zod.object({
+  "id": zod.number(),
+  "name": zod.string(),
+  "email": zod.string(),
+  "phone": zod.string().nullish(),
+  "projectType": zod.string().nullish(),
+  "preferredDate": zod.string(),
+  "preferredTime": zod.string(),
+  "notes": zod.string().nullish(),
+  "status": zod.enum(['pending', 'confirmed', 'cancelled']),
+  "createdAt": zod.string()
+})
+
+
+/**
+ * @summary Delete a booking
+ */
+export const DeleteBookingParams = zod.object({
+  "id": zod.coerce.number()
+})
+
+
+/**
  * @summary Get CRM dashboard stats
  */
 export const GetDashboardStatsResponse = zod.object({

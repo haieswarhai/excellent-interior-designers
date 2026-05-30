@@ -12,6 +12,7 @@ import Contact from "@/pages/contact";
 import Inquiry from "@/pages/inquiry";
 import AdminDashboard from "@/pages/admin/dashboard";
 import AdminProjects from "@/pages/admin/projects";
+import Book from "@/pages/book";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -31,6 +32,7 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/inquiry" component={Inquiry} />
+      <Route path="/book" component={Book} />
       <Route path="/admin" component={AdminDashboard} />
       <Route path="/admin/projects" component={AdminProjects} />
       <Route component={NotFound} />

@@ -65,7 +65,7 @@ ${values.message}
         onSuccess: () => {
           toast({
             title: "Inquiry Received",
-            description: "Thank you for considering Maison Intérieure. We will review your details and be in touch soon.",
+            description: "Thank you for considering eXcellent Interior Designers. We will review your details and be in touch soon.",
           });
           form.reset();
         },

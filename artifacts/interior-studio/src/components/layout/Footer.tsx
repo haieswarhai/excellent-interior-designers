@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="md:col-span-2">
           <Link href="/" className="font-serif text-2xl tracking-wider mb-6 block">
-            MAISON INTÉRIEURE
+            eXcellent Interior Designers
           </Link>
           <p className="text-muted max-w-sm font-light leading-relaxed">
             Crafting refined spaces for discerning clients. An atelier of light, proportion, and quiet confidence.
@@ -20,6 +20,7 @@ export default function Footer() {
             <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
             <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
             <li><Link href="/inquiry" className="hover:text-primary transition-colors">Start a Project</Link></li>
+            <li><Link href="/book" className="hover:text-primary transition-colors">Book Consultation</Link></li>
           </ul>
         </div>
         
@@ -33,7 +34,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container mx-auto px-6 md:px-12 mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-muted-foreground">
-        <p>&copy; {new Date().getFullYear()} Maison Intérieure. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} eXcellent Interior Designers. All rights reserved.</p>
         <Link href="/admin" className="hover:text-primary transition-colors mt-4 md:mt-0">Staff Portal</Link>
       </div>
     </footer>

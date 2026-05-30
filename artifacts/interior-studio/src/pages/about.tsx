@@ -16,7 +16,7 @@ export default function About() {
               </h1>
               <div className="space-y-6 text-muted-foreground font-light text-lg leading-relaxed">
                 <p>
-                  Maison Intérieure was founded on a simple premise: that the spaces we inhabit shape our daily lives in profound ways. We design homes that breathe, balancing contemporary rigor with timeless warmth.
+                  eXcellent Interior Designers was founded on a simple premise: that the spaces we inhabit shape our daily lives in profound ways. We design homes that breathe, balancing contemporary rigor with timeless warmth.
                 </p>
                 <p>
                   Our aesthetic is defined by restraint. We favor natural light, pale stone, rich woods, and brass accents that patinate beautifully over time. We believe that true luxury lies not in excess, but in the meticulous consideration of every detail.
@@ -30,7 +30,7 @@ export default function About() {
             <div className="order-1 lg:order-2 aspect-[4/5] w-full overflow-hidden bg-stone-100 animate-in fade-in duration-1000">
               <img 
                 src="/about-studio.png" 
-                alt="Maison Intérieure Studio" 
+                alt="eXcellent Interior Designers Studio" 
                 className="w-full h-full object-cover"
               />
             </div>
