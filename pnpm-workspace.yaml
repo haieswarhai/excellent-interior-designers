@@ -75,9 +75,7 @@ onlyBuiltDependencies:
   - unrs-resolver
 
 overrides:
-  # replit uses linux-x64 only, we can exclude all other platforms
-  "esbuild>@esbuild/darwin-arm64": "-"
-  "esbuild>@esbuild/darwin-x64": "-"
+  # Exclude uncommon/server platforms not needed for development
   "esbuild>@esbuild/freebsd-arm64": "-"
   "esbuild>@esbuild/freebsd-x64": "-"
   "esbuild>@esbuild/linux-arm": "-"
@@ -93,9 +91,6 @@ overrides:
   "esbuild>@esbuild/openbsd-arm64": "-"
   "esbuild>@esbuild/openbsd-x64": "-"
   "esbuild>@esbuild/sunos-x64": "-"
-  "esbuild>@esbuild/win32-arm64": "-"
-  "esbuild>@esbuild/win32-ia32": "-"
-  "esbuild>@esbuild/win32-x64": "-"
   "esbuild>@esbuild/aix-ppc64": '-'
   "esbuild>@esbuild/android-arm": '-'
   "esbuild>@esbuild/android-arm64": '-'
